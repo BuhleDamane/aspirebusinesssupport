@@ -14,10 +14,12 @@ body {
 .nav-link{
     font-size: 20px;
 }
+
 .hero-section {
     background-color: #ffffff; 
     padding: 50px 0;
 }
+
 .col-md-6 {
     display: flex;
     justify-content: center;
@@ -32,22 +34,55 @@ body {
     overflow: hidden;
 }
 
-
 h1 {
+    font-weight: 650;
+    font-family: "Playfair", serif;
     color: #663300; 
 }
+
 p {
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
     color: #333333; 
 }
-.btn-primary {
-    background-color: #003366;
-    border-color: #003366;
+/* General button styles */
+.btn {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
 }
-.btn-secondary {
-    background-color: #663300; 
-    border-color: #663300;
+
+.btn:hover {
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
 }
+
+/* Button 1 (Contact Us) - Blue background */
+.btn-contact {
+    background-color: #003366; /* Navy blue */
+    border: 1px solid #003366; /* Matching border */
+}
+
+/* Button 2 (Our Services) - Brown background */
+.btn-services {
+    background-color: #663300; /* Brown */
+    border: 1px solid #663300; /* Matching border */
+}
+
+/* Optional: Button hover effects */
+.btn-contact:hover {
+    background-color: #0055a5; /* Lighter blue on hover */
+}
+
+.btn-services:hover {
+    background-color: #8b4d26; /* Lighter brown on hover */
+}
+
+
 .footer {
     background-color: #000000; 
-    color: white;
+    color: #8b4d26;
 }
