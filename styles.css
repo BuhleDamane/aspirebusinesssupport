@@ -1,0 +1,31 @@
+body {
+    background-color: #f8f9fa; /* Light grey background */
+}
+.navbar {
+    background-color: #003366; /* Dark blue */
+}
+.navbar-brand, .nav-link {
+    color: white !important;
+}
+.hero-section {
+    background-color: #ffffff; /* White background */
+    padding: 50px 0;
+}
+h1 {
+    color: #663300; /* Brown */
+}
+p {
+    color: #333333; /* Dark grey */
+}
+.btn-primary {
+    background-color: #003366; /* Dark blue */
+    border-color: #003366;
+}
+.btn-secondary {
+    background-color: #663300; /* Brown */
+    border-color: #663300;
+}
+.footer {
+    background-color: #000000; /* Black */
+    color: white;
+}
