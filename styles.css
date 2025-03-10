@@ -35,15 +35,17 @@ body {
 }
 
 h1 {
-    font-weight: 650;
+    font-weight: 700;
     font-family: "Playfair", serif;
     color: #663300; 
+    font-size: 65px;
 }
 
 p {
     font-weight: 500;
     font-family: "Poppins", sans-serif;
     color: #333333; 
+    font-size: 23px;
 }
 
 .btn {
