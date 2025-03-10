@@ -27,10 +27,10 @@ body {
 }
 
 .home-image {
-    width: 400px; /* Fixed size */
-    height: 400px;
-    border-radius: 10%; /* Rounded edges */
-    object-fit: cover; /* Ensures no distortion */
+    width: 400px; 
+    height: 463px;
+    border-radius: 10%; 
+    object-fit: cover; 
     overflow: hidden;
 }
 
@@ -45,8 +45,9 @@ p {
     font-family: "Poppins", sans-serif;
     color: #333333; 
 }
-/* General button styles */
+
 .btn {
+    font-family: "Poppins", sans-serif;
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -57,32 +58,122 @@ p {
 }
 
 .btn:hover {
-    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    transform: scale(1.05)
 }
 
-/* Button 1 (Contact Us) - Blue background */
+
 .btn-contact {
-    background-color: #003366; /* Navy blue */
-    border: 1px solid #003366; /* Matching border */
+    background-color: #003366; 
+    border: 1px solid #003366; 
 }
 
-/* Button 2 (Our Services) - Brown background */
+
 .btn-services {
-    background-color: #663300; /* Brown */
-    border: 1px solid #663300; /* Matching border */
+    background-color: #663300;
+    border: 1px solid #663300;
 }
 
-/* Optional: Button hover effects */
+
 .btn-contact:hover {
-    background-color: #0055a5; /* Lighter blue on hover */
+    background-color: #0055a5; 
 }
 
 .btn-services:hover {
-    background-color: #8b4d26; /* Lighter brown on hover */
+    background-color: #8b4d26; 
 }
 
 
 .footer {
-    background-color: #000000; 
-    color: #8b4d26;
+  background-color: #031322 !important; 
+    padding: 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+ 
+}
+
+.footer-logo .logo-image {
+    width: 150px; 
+    height: auto;
+}
+
+
+.footer-links {
+    text-align: center;
+    flex-grow: 1;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-links ul {
+    display: block;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.3s ease-in-out;
+    font-weight: 600;
+}
+
+.footer-link:hover {
+    color: #007bff; 
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    font-weight: 600;
+}
+
+.social-icons a {
+    text-decoration: none; 
+    color: inherit; 
+    font-size: 30px; 
+    transition: transform 0.3s, color 0.3s; 
+    
+}
+
+
+.social-icons a:hover {
+    transform: scale(1.2); 
+    color: #007bff; 
+}
+
+
+.social-icons a i.fa-facebook-square {
+    color: #3b5998;
+}
+
+.social-icons a i.fa-twitter-square {
+    color: #1da1f2;
+}
+
+.social-icons a i.fa-whatsapp-square {
+    color: #25d366;
+}
+
+.social-icons a i.fa-instagram-square {
+    color: #e4405f;
+}
+
+
+.footer-bottom {
+    background-color: #000000;
+    color: #8b4d26 ;
+}
+
+.footer-bottom  p{
+    color: #ffff;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
 }
