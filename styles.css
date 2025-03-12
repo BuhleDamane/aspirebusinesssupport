@@ -338,7 +338,6 @@ h2 {
 
   .service-box {
     display: inline-block;
-    
     background-color: #00c6c7;
     color: white;
     margin-bottom: 20px;
@@ -347,6 +346,7 @@ h2 {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     position: relative;
     transition: all 0.3s ease;
+    height: 320px;
   }
   
   .service-box h3 {
@@ -397,7 +397,7 @@ h2 {
   .btn-secondary {
     padding: 12px 25px;
     font-size: 1.2rem;
-    border-radius: 5px
+    border-radius: 5px;
   }  
 
 #why-choose-us {
@@ -582,7 +582,7 @@ h2 {
 
 #cta .btn:hover {
     background-color: #0055a5;
-    border-color: #000;
+    border-color: #00c6c7;
 }
 
 .footer {
