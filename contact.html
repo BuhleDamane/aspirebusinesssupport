@@ -11,6 +11,97 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css"> 
 </head>
+<style>
+   
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+.contact-h1{
+    text-align: center;
+    margin-top: 30px;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+.contact-form {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: white;
+    padding: 14px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+.contact-info {
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+
+</style>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -30,6 +121,38 @@
         </div>
     </div>
 </nav>
+        <h1 class="contact-h1">Contact Us</h1>
+        <p>We'd love to hear from you. Please fill out the form below, and we'll get in touch with you soon!</p>
+    </header>
+
+    <section class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Your Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="phone">Your Phone (optional):</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <p><strong>Phone:</strong> +123 456 7890</p>
+        <p><strong>Email:</strong> info@example.com</p>
+        <p><strong>Address:</strong> 123 Street Name, City, Country</p>
+    </section>
+
+</body>
+</html>
 
 
 <footer class="footer">
@@ -71,5 +194,45 @@
     <p>&copy; 2025 Aspire Business Support. All Rights Reserved.</p>
 </div>
 </footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+
+        const form = document.querySelector('form');
+        const successMessage = document.createElement('div');
+        successMessage.style.display = 'none'; 
+        successMessage.style.backgroundColor = '#4CAF50';
+        successMessage.style.color = 'white';
+        successMessage.style.padding = '15px';
+        successMessage.style.marginTop = '20px';
+        successMessage.style.borderRadius = '5px';
+        successMessage.innerText = 'Your message has been sent successfully!';
+
+
+        form.parentNode.insertBefore(successMessage, form.nextSibling);
+
+      
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            successMessage.innerText = 'Sending your message...';
+            successMessage.style.backgroundColor = '#f39c12'; 
+            successMessage.style.display = 'block';
+
+            setTimeout(function() {
+                successMessage.innerText = 'Your message has been sent successfully!';
+                successMessage.style.backgroundColor = '#4CAF50'; 
+            }, 5000);
+   
+            setTimeout(function() {
+                form.reset();
+         
+                setTimeout(function() {
+                    successMessage.style.display = 'none';
+                }, 5000);
+            }, 10000); 
+        });
+    });
+</script>
+
 </body>
 </html>
