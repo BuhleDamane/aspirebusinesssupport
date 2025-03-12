@@ -1,21 +1,143 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="#">Aspire Business Support</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspire Business Support</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<style>
+    #careers {
+    text-align: center;
+}
+
+.job-list {
+    margin-top: 20px;
+}
+
+.job {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.job h4 {
+    font-size: 1.2rem;
+    color: #003366;
+    font-family: "Playfair", serif;
+}
+
+.job-date {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.job-description {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.job-reference {
+    font-weight: bold;
+    color: #00c6c7;
+    margin-bottom:20px;
+    font-size: 15px;
+}
+
+.btn-secondary {
+    background-color: #003366;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-secondary:hover {
+    background-color: #00c6c7;
+    color: #003366;
+}
+
+</style>
+<body>
+ 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Aspire Business Support</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
-
-
+    </nav>
+    <section id="careers" class="container my-5">
+        <h2>Careers</h2>
+        <p>Explore exciting opportunities and join our growing team. We’re always on the lookout for passionate individuals to help us achieve our mission.</p>
+    
+        <div class="job-list">
+            <div class="job">
+                <h4>1. Frontend Web Developer</h4>
+                <p class="job-date">Posted on: March 10, 2025</p>
+                <p class="job-description">We are looking for a creative Frontend Web Developer to design and implement user interfaces for web applications. Strong experience in React, HTML, CSS, and JavaScript is essential.</p>
+                <p class="job-reference">Reference: #WEBDEV2025</p>
+                <a href="apply.html" class="btn-primary job-button">Apply Here</a>
+            </div>
+    
+            <div class="job">
+                <h4>2. Tax and Accounting Specialist</h4>
+                <p class="job-date">Posted on: March 9, 2025</p>
+                <p class="job-description">We need a detail-oriented Tax and Accounting Specialist to manage our clients’ tax returns, VAT registration, and bookkeeping services. Previous experience in accounting and tax filings is required.</p>
+                <p class="job-reference">Reference: #TAX2025</p>
+                <a href="apply.html" class="btn-primary job-button">Apply Here</a>
+            </div>
+    
+            <div class="job">
+                <h4>3. University Application Specialist</h4>
+                <p class="job-date">Posted on: March 8, 2025</p>
+                <p class="job-description">Help students with university applications, bursary applications, and accommodation assistance. If you have a strong background in educational support and counseling, apply now!</p>
+                <p class="job-reference">Reference: #EDU2025</p>
+                <a href="apply.html" class="btn-primary job-button">Apply Here</a>
+            </div>
+    
+            <div class="job">
+                <h4>4. Social Media Manager</h4>
+                <p class="job-date">Posted on: March 7, 2025</p>
+                <p class="job-description">Looking for an experienced Social Media Manager to create, implement, and manage digital marketing campaigns across various platforms for our clients.</p>
+                <p class="job-reference">Reference: #SOCIAL2025</p>
+                <a href="apply.html" class="btn-primary job-button">Apply Here</a>
+            </div>
+    
+            <div class="job">
+                <h4>5. Graphic Designer</h4>
+                <p class="job-date">Posted on: March 6, 2025</p>
+                <p class="job-description">We need a talented graphic designer to work on logo designs, brochures, menus, and other branding materials. If you have a creative flair, we want to hear from you!</p>
+                <p class="job-reference">Reference: #GRAPHIC2025</p>
+                <a href="apply.html" class="btn-primary job-button">Apply Here</a>
+            </div>
+        </div>
+    </section>
+    
 <footer class="footer">
 <div class="container footer-content d-flex justify-content-between align-items-center">
    
@@ -55,3 +177,16 @@
     <p>&copy; 2025 Aspire Business Support. All Rights Reserved.</p>
 </div>
 </footer>
+<script>
+    // Example: Smooth scrolling for "See More" buttons (if you're linking to job details sections)
+document.querySelectorAll('.btn-secondary').forEach(button => {
+    button.addEventListener('click', function (event) {
+        event.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+    });
+});
+
+</script>
+</body>
+</html>
