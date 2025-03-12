@@ -10,94 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="reviews.css">
 </head>
 <style>
-  
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-}
-
-h1, h2, h3 {
-    text-align: center;
-    color: #444;
-}
-
-p {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-
-.header {
-    background-color: #2c3e50;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-
-section {
-    padding: 40px 20px;
-    background: white;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.service-category, .features div, .testimonial {
-    background: #ecf0f1;
-    padding: 15px;
-    margin: 10px auto;
-    border-radius: 8px;
-    width: 80%;
-}
-
-.founder-section {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.founder-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin: 20px;
-}
-
-
-.cta-button {
-    display: block;
-    width: 200px;
-    margin: 20px auto;
-    padding: 15px;
-    background-color: #3498db;
-    color: white;
-    text-align: center;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.cta-button:hover {
-    background-color: #2980b9;
-}
-
-
-.footer {
-    background: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
 
 </style>
 <body>
@@ -119,23 +34,14 @@ section {
             </div>
         </div>
     </nav>
-    
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About Us - Aspire Business Support</title>
-        <link rel="stylesheet" href="styles.css">
-        <script defer src="script.js"></script>
-    </head>
-    <body>
-        <header class="header fade-in">
-            <h1>About Aspire Business Support</h1>
-            <p>Your Guardian Angel in Business & Education</p>
+
+        <header class="header about">
+            <h1 id="about-text"></h1>  
+            <p class="slogan">Your Guardian Angel in Business & Education</p>
         </header>
         
-        <section class="founder-section fade-in">
+        
+        <section class="founder-section fade-in about">
             <img src="images/IMG-20240107-WA0013.jpg" alt="Founder Image" class="founder-img">
             <div class="founder-text">
                 <h2>Meet the Founder</h2>
@@ -144,7 +50,7 @@ section {
             </div>
         </section>
         
-        <section class="services-section slide-in">
+        <section class="services-section slide-in about">
             <h2>Our Services</h2>
             <div class="row">
                 <div class="col-md-4">
@@ -161,7 +67,7 @@ section {
             </div>
         </div>
             <div class="col-md-4">
-            <div class="service-category">
+            <div class="service-category about">
                 <h3>💼 Business & Financial Services</h3>
                 <p>We provide affordable and efficient financial solutions, including:</p>
                 <ul>
@@ -173,7 +79,7 @@ section {
                 <p>Let us handle the numbers while you focus on growing your business.</p>
             </div></div>
             <div class="col-md-4">
-            <div class="service-category">
+            <div class="service-category about">
                 <h3>🎨 Branding & Digital Solutions</h3>
                 <p>Your brand identity matters! We create professional digital and print solutions, including:</p>
                 <ul>
@@ -188,7 +94,7 @@ section {
         </div>
         </section>
         
-        <section class="mission-section bounce-in">
+        <section class="mission-section bounce-in about">
             <h2>Why Choose Us?</h2>
             <p>We understand the struggles of students and entrepreneurs. Our goal is to take the stress off your shoulders and let you focus on what truly matters.</p>
             <div class="features">
@@ -198,24 +104,120 @@ section {
             </div>
         </section>
         
-        <section class="testimonial-section slide-in">
-            <h2>What Our Clients Say</h2>
-            <div class="testimonial-carousel">
-                <div class="testimonial">"Aspire Business Support helped me apply to university stress-free! Highly recommend." – <strong>Thabo M.</strong></div>
-                <div class="testimonial">"Fast and reliable business registration services. They handled everything!" – <strong>Linda K.</strong></div>
-                <div class="testimonial">"My website and logo were designed beautifully! They truly care about branding." – <strong>Neo P.</strong></div>
+     
+<section id="reviews" class="container my-5 text-center">
+    <h2>What Our Clients Say</h2>
+    <div class="reviews-container">
+        <div class="reviews-track">
+            <div class="review-box">
+                <div class="review-header">
+                    <span class="review-name">Nokuthula Noks</span>
+                    <span class="social-media-logo facebook"><i class="fab fa-facebook"></i></span>
+                </div>
+                <div class="review-date">Feb 15, 2025</div>
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-message">"Amazing service, really helped me with my business! The team was highly professional and attentive to all my needs. They provided valuable insights and solutions that allowed me to streamline my processes and boost my efficiency. Their expertise in the field is unmatched, and they went above and beyond to ensure I was fully satisfied with the results. I highly recommend them to anyone looking for top-notch service and support. Thank you for making such a positive impact on my business!"</p>
             </div>
+            <div class="review-box">
+                <div class="review-header">
+                    <span class="review-name">Jane Smith</span>
+                    <span class="social-media-logo twitter"><i class="fab fa-twitter"></i></span>
+                </div>
+                <div class="review-date">Jan 10, 2025</div>
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-message">"Their website design exceeded my expectations! From the initial consultation to the final product, everything was handled professionally and with great attention to detail. They truly understood my vision and brought it to life in a way that was both visually stunning and user-friendly. The team went above and beyond to ensure every feature was tailored to my needs, and the end result was a website that not only looks great but also functions seamlessly."</p>
+            </div>
+            <div class="review-box">
+                <div class="review-header">
+                    <span class="review-name">Mdivhuwo Munyai</span>
+                    <span class="social-media-logo whatsapp"><i class="fab fa-whatsapp"></i></span>
+                </div>
+                <div class="review-date">Dec 5, 2024</div>
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-message">"Great support with my university application! I was struggling with the entire process, but their team made everything so much easier. From helping me choose the right course to providing guidance on my application essay, they were with me every step of the way. They even assisted with the necessary documentation and made sure everything was submitted on time. I was so relieved to have their expertise guiding me through the process."</p>
+            </div>
+            <div class="review-box">
+                <div class="review-header">
+                    <span class="review-name">Atlegang Jakes</span>
+                    <span class="social-media-logo instagram"><i class="fab fa-instagram"></i></span>
+                </div>
+                <div class="review-date">Nov 25, 2024</div>
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-message">"Super helpful with tax filings and bookkeeping! As a small business owner, managing my finances was always a headache, but their team made the entire process smooth and stress-free. They helped me organize my records, ensure everything was in order for tax season, and took care of all the complicated paperwork. They even provided valuable advice on how to optimize my expenses and improve my cash flow."</p>
+            </div>
+            <div class="review-box">
+                <div class="review-header">
+                    <span class="review-name">Pfumo Lerato</span>
+                    <span class="social-media-logo facebook"><i class="fab fa-facebook"></i></span>
+                </div>
+                <div class="review-date">Oct 18, 2024</div>
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-message">"Thanks for all your help with my business setup! Starting a business can be overwhelming, but the team at Aspire Business Support made everything so much easier. From registering my company to helping me set up my accounting systems, they were with me every step of the way. They even assisted with getting my BEE affidavit and setting up my tax compliance, making sure I was fully ready to operate legally and efficiently."</p>
+            </div>
+            <div class="review-box">
+                <div class="review-header">
+                    <span class="review-name">Michael Davis</span>
+                    <span class="social-media-logo twitter"><i class="fab fa-twitter"></i></span>
+                </div>
+                <div class="review-date">Sep 30, 2024</div>
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-message">"Top-notch web development services! I reached out to Aspire Business Support to redesign my website, and the results exceeded all my expectations. The team not only gave my website a fresh, modern look, but they also optimized its functionality to provide a seamless user experience. They took the time to understand my business needs and goals, translating them into a website that reflects my brand perfectly."</p>
+            </div>
+            <div class="review-box">
+                <div class="review-header">
+                    <span class="review-name">Liam Smangele</span>
+                    <span class="social-media-logo whatsapp"><i class="fab fa-whatsapp"></i></span>
+                </div>
+                <div class="review-date">Aug 12, 2024</div>
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-message">"Incredible service with fast responses! From the moment I reached out to Aspire Business Support, I was impressed by how quickly they responded to my queries. Not only was the turnaround time faster than I expected, but the quality of their work was exceptional. They truly listened to my needs and delivered solutions that were both effective and efficient."</p>
+            </div>
+            <div class="review-box">
+                <div class="review-header">
+                    <span class="review-name">Andile Ka Ncube</span>
+                    <span class="social-media-logo instagram"><i class="fab fa-instagram"></i></span>
+                </div>
+                <div class="review-date">Jul 23, 2024</div>
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-message">"They helped me get into my dream university! I was struggling with my university applications, not knowing where to start or what to include. Aspire Business Support guided me step by step through the process, offering valuable advice and resources that made my application stand out. Thanks to their expertise, I was able to submit a strong application that led to my acceptance into my dream university."</p>
+            </div>
+            <div class="review-box">
+                <div class="review-header">
+                    <span class="review-name">Lufuno Ndzhelele</span>
+                    <span class="social-media-logo facebook"><i class="fab fa-facebook"></i></span>
+                </div>
+                <div class="review-date">Jun 15, 2024</div>
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-message">"Fantastic help with my academic assignments! I was overwhelmed with multiple assignments and deadlines, unsure how to approach them. Aspire Business Support came to my rescue, offering expert assistance in breaking down complex topics and providing clear, structured guidance. Their support not only helped me complete my assignments on time but also deepened my understanding of the subjects."</p>
+            </div>
+            <div class="review-box">
+                <div class="review-header">
+                    <span class="review-name">Karabo Setlhako</span>
+                    <span class="social-media-logo twitter"><i class="fab fa-twitter"></i></span>
+                </div>
+                <div class="review-date">May 3, 2024</div>
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-message">"Highly recommend their services for business tax! I’ve been struggling with the complexities of business taxes and needed professional help to navigate the process. Aspire Business Support made everything so much easier. They were incredibly thorough, explaining each step of the tax filing and helping me understand what was needed for compliance. They handled everything on time and with such efficiency. I feel so much more confident in my business’s financial standing, knowing they are on top of my tax obligations."</p>
+            </div>
+            <div class="review-box">
+                <div class="review-header">
+                    <span class="review-name">Sophia Sticks</span>
+                    <span class="social-media-logo whatsapp"><i class="fab fa-whatsapp"></i></span>
+                </div>
+                <div class="review-date">Apr 10, 2024</div>
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-message">"Helped me with branding and logo design! I approached Aspire Business Support for help with creating a brand identity for my new business, and they truly exceeded my expectations. From the initial concept to the final design, they were extremely responsive and creative. They really took the time to understand the vision for my brand and brought it to life in a way that perfectly reflects my values and mission. The logo design was clean, modern, and exactly what I was looking for."</p>
+            </div>
+        </div>
+    </div>
         </section>
         
-        <section class="cta-section zoom-in">
+        <section class="cta-section zoom-in about">
             <h2>Ready to Elevate Your Success?</h2>
             <p>Let Aspire Business Support be your guiding light in business and education.</p>
             <a href="contact.html" class="cta-button">Get in Touch</a>
         </section>
-        
-        <footer class="footer">
-            <p>&copy; 2025 Aspire Business Support | Making Life Easier</p>
-        </footer>
+   
     </body>
     </html>
    
@@ -259,40 +261,23 @@ section {
     </div>
 </footer>
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
- 
-    const fadeElements = document.querySelectorAll(".fade-in");
-    fadeElements.forEach(el => {
-        el.style.opacity = 0;
-        el.style.transition = "opacity 1.5s ease-in-out";
-        setTimeout(() => {
-            el.style.opacity = 1;
-        }, 500);
-    });
+ document.addEventListener("DOMContentLoaded", function () {
+    const text = "About Aspire Business Support";
+    let i = 0;
+    const speed = 100; 
+    const aboutText = document.getElementById("about-text");
 
-    
-    const slideElements = document.querySelectorAll(".slide-in");
-    slideElements.forEach(el => {
-        el.style.transform = "translateX(-100%)";
-        el.style.opacity = 0;
-        el.style.transition = "all 1s ease-in-out";
-        setTimeout(() => {
-            el.style.transform = "translateX(0)";
-            el.style.opacity = 1;
-        }, 700);
-    });
+    function typeWriter() {
+        if (i < text.length) {
+            aboutText.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        } else {
+            aboutText.style.borderRight = "none";
+        }
+    }
 
-  
-    const bounceElements = document.querySelectorAll(".bounce-in");
-    bounceElements.forEach(el => {
-        el.style.transform = "scale(0.5)";
-        el.style.opacity = 0;
-        el.style.transition = "all 0.8s ease-out";
-        setTimeout(() => {
-            el.style.transform = "scale(1)";
-            el.style.opacity = 1;
-        }, 900);
-    });
+    typeWriter();
 });
 
 </script>
