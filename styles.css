@@ -25,9 +25,12 @@ p{
     background-color: #ffffff; 
     padding: 50px 0;
     height: 100vh;
+    width: 100%;
 }
 .hero-container{
     height: 75vh;
+    width: 100%;
+    background-color: #f9f9f9; 
 }
 .col-md-6 {
     display: flex;
@@ -761,14 +764,29 @@ p {
     padding: 20px;
     text-align: center;
 }
+ .header-about{
+    width: 100% !important;
+    border-radius: 0px !important;
+ }
 
-
-section {
+.about-preview{
     padding: 40px 20px;
     background: white;
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+.about{
+    padding: 40px 20px;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom:25px;
+    margin-top:25px;
 }
 .service-category h3{
     font-size: 25px;
@@ -908,3 +926,21 @@ section {
 }
 
   /* ABOUT PAGE ENDS*/
+
+  /* Services  PAGE ENDS*/
+
+.services-about-preview{
+
+}
+  .services-about-preview li {
+    list-style: none !important;
+    font-size: 15px;
+  }
+  .services-about-preview ul li p{
+    font-family: 15px;
+  }
+  .services-about li p{
+    font-size: 15px !important;
+  }
+ 
+  /* SERVICES PAGE ENDS*/
