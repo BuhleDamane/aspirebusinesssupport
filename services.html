@@ -12,6 +12,52 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">    
     <link rel="stylesheet" href="styles.css"> 
 </head>
+<style>
+  #services-intro {
+    background-color: #f8f9fa; /* Light gray background for contrast */
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#services-intro .container {
+    max-width: 1200px; /* Ensure the container is not too wide */
+}
+
+#services-intro h2 {
+    font-size: 2.5rem; /* Larger heading font size */
+    color: #007bff; /* Primary color for the company branding */
+    font-weight: bold;
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+#services-intro .lead {
+    font-size: 1.25rem; /* Slightly larger font size for the introduction text */
+    color: #6c757d; /* Muted text color for better readability */
+    margin-bottom: 20px; /* Space below the lead paragraph */
+}
+
+#services-intro p {
+    font-size: 1rem;
+    color: #6c757d;
+    line-height: 1.6; /* Improve line spacing for readability */
+    margin-bottom: 15px; /* Space below each paragraph */
+}
+
+#services-intro p strong {
+    font-weight: bold; /* Emphasize the company name */
+}
+
+@media (max-width: 768px) {
+    #services-intro h2 {
+        font-size: 2rem; /* Reduce the heading size on smaller screens */
+    }
+
+    #services-intro .lead {
+        font-size: 1.1rem; /* Slightly smaller lead text for mobile */
+    }
+}
+
+</style>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -31,12 +77,30 @@
         </div>
     </div>
 </nav>
+<section id="services-intro" class="py-5 bg-light">
+  <div class="container">
+      <div class="row text-center">
+          <div class="col">
+              <h2 class="display-4 text-primary mb-4">Our Expert Services</h2>
+              <p class="lead text-muted">
+                  At <strong>Aspire Business Support</strong>, we pride ourselves on offering tailored solutions designed to meet the unique needs of each client. Whether you're looking to build your online presence, improve your digital infrastructure, or create innovative solutions for your business, we have the expertise to help you succeed.
+              </p>
+              <p class="text-muted">
+                  Our dedicated team is committed to delivering the highest quality service, ensuring that every project is completed on time and within budget. We focus on building lasting relationships with our clients, understanding their challenges, and providing support at every step of the way.
+              </p>
+              <p class="text-muted">
+                  Explore the variety of services we offer below, and find the perfect solution to help you achieve your goals.
+              </p>
+          </div>
+      </div>
+  </div>
+</section>
 
 <div class="grid ">
     <div class="border p-4 rounded-xl shadow-lg">
       <h2 class="text-xl font-bold mb-2">Education Services 🎓</h2>
-      <div class="row ">
-      <div class="col-md-4 about-preview services-about-preview">
+      <div class="row mr-5">
+      <div class="col-md-4 mr-5 about-preview services-about-preview">
       <div class="mb-4">
         <h3 class="font-semibold">Individual Services</h3>
         <ul>
@@ -68,6 +132,8 @@
         <li> <span><i class="fa-solid fa-chevron-right"></i></span> Tutoring : 3+ Modules get 20% discount</li>
     </div>
 </div>
+<button class="btn btn-primary mt-3 edu-button">Inquire Now</button> <!-- Button added -->
+
     </div>
     </div>
   
@@ -106,6 +172,8 @@
         <h3 class="font-semibold">Discount Offers</h3>
         <li> <span><i class="fa-solid fa-chevron-right"></i></span> <p>Company Registration + Two Tax Services - <strong>R2 500.00</strong></p> 
       </div>
+      <button class="btn btn-primary mt-3 edu-button">Inquire Now</button> <!-- Button added -->
+
     </div>
 </div>
     <!-- Branding & Digital Solutions -->
@@ -150,6 +218,8 @@
         <h3 class="font-semibold">Pro Package</h3>
         <li><span><i class="fa-solid fa-chevron-right"></i></span> <p>Get 20% off when you book 3 services together</p> </li>
       </div>
+      <button class="btn btn-primary mt-3 edu-button">Inquire Now</button> <!-- Button added -->
+
     </div>
   </div>
 </div>
