@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Page</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* Navigation */
+        nav {
+            background: #0056b3;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            background: white;
+            color: #0056b3;
+        }
+
+        /* Section Styling */
+        .section {
+            margin: 40px 0;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            padding: 15px;
+            background: #0056b3;
+            color: white;
+            border-radius: 5px;
+            margin: 0;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .section h2:hover {
+            background: #003d80;
+        }
+
+        .section-content {
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            margin-top: 10px;
+            padding: 10px;
+            background: #0056b3;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .faq-item:hover {
+            background: #003d80;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">Company Policies & FAQ</h1>
+    </header>
+
+    <nav>
+        <a href=""></a>
+        <ul>
+            <li><a href="#privacy-policy">Privacy Policy</a></li>
+            <li><a href="#terms-conditions">Terms & Conditions</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Privacy Policy Section -->
+        <section class="section" id="privacy-policy">
+            <h2>Privacy Policy</h2>
+            <div class="section-content">
+                <p>We value your privacy and are committed to protecting your personal information. We ensure that all your data is handled securely and in accordance with the law. For more details, refer to our full privacy policy.</p>
+            </div>
+        </section>
+
+        <!-- Terms & Conditions Section -->
+        <section class="section" id="terms-conditions">
+            <h2>Terms & Conditions</h2>
+            <div class="section-content">
+                <p>By accessing or using our services, you agree to comply with our terms. We reserve the right to update our terms from time to time. For full terms, please refer to the complete document.</p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section" id="faq">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+            <div class="faq-item">How do I apply for university?
+                <div class="faq-answer">We assist with university applications by guiding you through the application process and helping with required documents.</div>
+            </div>
+            <div class="faq-item">What business services do you offer?
+                <div class="faq-answer">We offer services like company registration, legal consulting, and marketing solutions for startups.</div>
+            </div>
+            <div class="faq-item">Do you design websites?
+                <div class="faq-answer">Yes! We create responsive websites that are tailored to your business needs and are mobile-friendly.</div>
+            </div>
+            <div class="faq-item">How do I contact support?
+                <div class="faq-answer">You can reach our support team via email at support@example.com or through our live chat feature on the website.</div>
+            </div>
+            <div class="faq-item">What payment methods do you accept?
+                <div class="faq-answer">We accept payments via credit/debit cards, PayPal, and bank transfers.</div>
+            </div>
+            <div class="faq-item">Can I cancel my subscription?
+                <div class="faq-answer">Yes, you can cancel your subscription at any time. Please refer to our cancellation policy for more details.</div>
+            </div>
+            <div class="faq-item">Is there a money-back guarantee?
+                <div class="faq-answer">We offer a 30-day money-back guarantee if you're not satisfied with our services.</div>
+            </div>
+            <div class="faq-item">Do you offer discounts for students?
+                <div class="faq-answer">Yes, we offer a 10% discount for students on selected services. Please contact us for more information.</div>
+            </div>
+            <div class="faq-item">Do you provide custom designs?
+                <div class="faq-answer">Yes, we offer custom web and graphic design services based on your preferences and brand requirements.</div>
+            </div>
+            <div class="faq-item">How secure is my data?
+                <div class="faq-answer">We use the latest encryption and security measures to ensure your data is safe and protected.</div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // FAQ Collapse Functionality
+            document.querySelectorAll(".faq-item").forEach(item => {
+                item.addEventListener("click", function () {
+                    let answer = this.querySelector(".faq-answer");
+                    answer.style.display = answer.style.display === "block" ? "none" : "block";
+                });
+            });
+        });
+    </script>
+</body>
+</html>
