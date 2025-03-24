@@ -12,52 +12,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">    
     <link rel="stylesheet" href="styles.css"> 
 </head>
-<style>
-  #services-intro {
-    background-color: #f8f9fa; 
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-#services-intro .container {
-    max-width: 1200px; 
-}
-
-#services-intro h2 {
-    font-size: 2.5rem;
-    color: #007bff; 
-    font-weight: bold;
-    margin-bottom: 20px; 
-}
-
-#services-intro .lead {
-    font-size: 1.25rem; 
-    color: #6c757d;
-    margin-bottom: 20px; 
-}
-
-#services-intro p {
-    font-size: 1rem;
-    color: #6c757d;
-    line-height: 1.6;
-    margin-bottom: 15px; 
-}
-
-#services-intro p strong {
-    font-weight: bold; 
-}
-
-@media (max-width: 768px) {
-    #services-intro h2 {
-        font-size: 2rem; 
-    }
-
-    #services-intro .lead {
-        font-size: 1.1rem; 
-    }
-}
-
-</style>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -96,122 +50,134 @@
   </div>
 </section>
 
-<div class="grid ">
-    <div class="border p-4 rounded-xl shadow-lg">
-      <h2 class="text-xl font-bold mb-2">Education Services 🎓</h2>
-      <div class="row mr-5">
-      <div class="col-md-4 services-container">
-        <h3 class="font-semibold">Individual Services</h3>
-        <ul>
-          <li> <span><i class="fa-solid fa-chevron-right"></i></span> University Applications - R50.00</li>
-          <li> <span><i class="fa-solid fa-chevron-right"></i></span> NSFAS Application - R20.00</li>
-          <li> <span><i class="fa-solid fa-chevron-right"></i></span> Bursary Applications - R150.00</li>
-          <li> <span><i class="fa-solid fa-chevron-right"></i></span> Student Accommodation Application - R50.00</li>
-          <li><span><i class="fa-solid fa-chevron-right"></i></span> Tertiary Registration - R300.00</li>
-        </ul>
+<div id="education-services" class="education-services">
+      <h2 class="title">Education Services 🎓</h2>
+      <div class="education-list">
+          <div class="education-box">
+              <h3>Individual Services</h3>
+              <ul>
+                  <li><i class="fa-solid fa-chevron-right"></i> University Applications - <strong>R50.00</strong></li>
+                  <li><i class="fa-solid fa-chevron-right"></i> NSFAS Application - <strong>R20.00</strong></li>
+                  <li><i class="fa-solid fa-chevron-right"></i> Bursary Applications - <strong>R150.00</strong></li>
+                  <li><i class="fa-solid fa-chevron-right"></i> Student Accommodation Application - <strong>R50.00</strong></li>
+                  <li><i class="fa-solid fa-chevron-right"></i> Tertiary Registration - <strong>R300.00</strong></li>
+              </ul>
+          </div>
+          <div class="education-box">
+              <h3>Tutoring Services</h3>
+              <ul>
+                  <li><i class="fa-solid fa-chevron-right"></i> Law & BCom Law - <strong>R300.00</strong> (Monthly / Per Module)</li>
+                  <li><i class="fa-solid fa-chevron-right"></i> Education (All Phases) - <strong>R250.00</strong> (Monthly / Per Module)</li>
+                  <li><i class="fa-solid fa-chevron-right"></i> Engineering (All Fields) - <strong>R300.00</strong> (Monthly / Per Module)</li>
+                  <li><i class="fa-solid fa-chevron-right"></i> Human Resources & Business Administration - <strong>R250.00</strong> (Monthly / Per Module)</li>
+              </ul>
+          </div>
+          <div class=" education-box">
+              <h3>Package Deals</h3>
+              <ul>
+                  <li><i class="fa-solid fa-chevron-right"></i> <strong>10</strong> University Applications - <strong>R400.00</strong></li>
+                  <li><i class="fa-solid fa-chevron-right"></i> <strong>10</strong> Accommodation Applications - <strong>R400.00</strong></li>
+                  <li><i class="fa-solid fa-chevron-right"></i> NSFAS + <strong>4</strong> Bursary Applications - <strong>R250.00</strong></li>
+                  <li><i class="fa-solid fa-chevron-right"></i> Tutoring: <strong>3+</strong> Modules get <strong>20%</strong> discount</li>
+              </ul>
+          </div>
+          
       </div>
-      <div class="col-md-4 services-container ">
-        <h3 class="font-semibold">Tutoring Services</h3>
-        <ul>
-          <li> <span><i class="fa-solid fa-chevron-right"></i></span> Law & BCom Law - R300.00 (Monthly / Per Module)</li>
-          <li> <span><i class="fa-solid fa-chevron-right"></i></span> Education (All Phases) - R250.00 (Monthly / Per Module)</li>
-          <li> <span><i class="fa-solid fa-chevron-right"></i></span> Engineering (All Fields) - R300.00 (Monthly / Per Module)</li>
-          <li> <span><i class="fa-solid fa-chevron-right"></i></span> Human Resources & Business Administration - R250.00 (Monthly / Per Module)</li>
-        </ul>
-    </div>
-      <div class="col-md-4 services-container">
-        <h3 class="font-semibold">Package Deals</h3>
-        <li> <span><i class="fa-solid fa-chevron-right"></i></span> 10 University Applications - R400.00</li>
-        <li> <span><i class="fa-solid fa-chevron-right"></i></span> 10 Accommodation Applications - R400.00</li>
-        <li> <span><i class="fa-solid fa-chevron-right"></i></span> NSFAS + 4 Bursary Applications - R250.00</li>
-        <li> <span><i class="fa-solid fa-chevron-right"></i></span> Tutoring : 3+ Modules get 20% discount</li>
+      <button class=" btn-primary edu-button">Inquire Now</button>
 </div>
-<button class="btn btn-primary mt-3 edu-button">Inquire Now</button> 
 
-    </div>
-    </div>
+
+
   
     <!-- Business & Financial Services -->
-    <div class="border p-4 rounded-xl shadow-lg">
-      <h2 class="text-xl font-bold mb-5">Business & Financial Services 💼</h2>
-      <div class="row">
-        <div class="col-md-3 mb-5 work-list">
-      <div class="mb-4">
-        <h3 class="font-semibold">Individual Services</h3>
-        <ul>
-          <li> <span><i class="fa-solid fa-chevron-right"></i></span> Company Registration - R2 000.00</li>
-          <li> <span><i class="fa-solid fa-chevron-right"></i></span> Accounting Services from - <strong> R1 500.00</strong></li>
-          <li> <span><i class="fa-solid fa-chevron-right"></i></span> CIPC Services from - <strong>R200.00</strong></li>
-          <li> <span><i class="fa-solid fa-chevron-right"></i></span> Tax Services from - <strong>R250.00</strong></li>
-          <li><span><i class="fa-solid fa-chevron-right"></i></span> Other Services CSD Registration from <strong>R450.00</strong></li>
-        </ul>
+    <div class="business-services">
+      <h2 class="title">Business & Financial Services 💼</h2>
+      <div class="business-list">
+        <div class="business-box">
+          <h3>Individual Services</h3>
+          <ul>
+            <li><i class="fa-solid fa-chevron-right"></i> Company Registration - <strong>R2 000.00</strong></li>
+            <li><i class="fa-solid fa-chevron-right"></i> Accounting Services from - <strong>R1 500.00</strong></li>
+            <li><i class="fa-solid fa-chevron-right"></i> CIPC Services from - <strong>R200.00</strong></li>
+            <li><i class="fa-solid fa-chevron-right"></i> Tax Services from - <strong>R250.00</strong></li>
+            <li><i class="fa-solid fa-chevron-right"></i> Other Services CSD Registration from <strong>R450.00</strong></li>
+          </ul>
+        </div>
+    
+        <div class="business-box">
+          <h3>Additional Services</h3>
+          <ul>
+            <li><i class="fa-solid fa-chevron-right"></i> Business Plans - <strong>R900.00</strong></li>
+            <li><i class="fa-solid fa-chevron-right"></i> Financial Consultation - <strong>R750.00</strong></li>
+          </ul>
+        </div>
+    
+        <div class="business-box">
+          <h3>Package Deals</h3>
+          <ul>
+            <li><i class="fa-solid fa-chevron-right"></i> Company Registration + Two Tax Services - <strong>R2 500.00</strong></li>
+          </ul>
+        </div>
+    
+        <div class="business-box">
+          <h3>Discount Offers</h3>
+          <ul>
+            <li><i class="fa-solid fa-chevron-right"></i> Company Registration + Two Tax Services - <strong>R2 500.00</strong></li>
+          </ul>
+        </div>
+    
       </div>
+      <button class="btn btn-primary inquire-btn">Inquire Now</button>
     </div>
-      <div class="col-md-3 mb-5 work-list">
-      <div class="mb-4">
-        <h3 class="font-semibold">Additional Services</h3>
-        <ul>
-          <li> <span><i class="fa-solid fa-chevron-right"></i></span> Business Plans - R900.00</li>
-          <li> <span><i class="fa-solid fa-chevron-right"></i></span> Financial Consultation - R750.00</li>
-        </ul>
-      </div>
-      </div>
-      <div class="col-md-3 mb-5 work-list">
-      <div class="mb-4">
-        <h3 class="font-semibold">Package Deals</h3>
-        <li><span><i class="fa-solid fa-chevron-right"></i></span> <p>Company Registration + Two Tax Services - <strong>R2 500.00</strong></p> </li>
-      </div>
-    </div>
-      <div class="col-md-3 mb-5 work-list">
-        <h3 class="font-semibold">Discount Offers</h3>
-        <li> <span><i class="fa-solid fa-chevron-right"></i></span> <p>Company Registration + Two Tax Services - <strong>R2 500.00</strong></p> 
-      </div>
-      <button class="btn btn-primary mt-3 edu-button">Inquire Now</button> <!-- Button added -->
-
-    </div>
-</div>
     <!-- Branding & Digital Solutions -->
-    <div class="border p-4 rounded-xl shadow-lg">
-      <h2 class="text-xl font-bold mb-2">Branding & Digital Solutions 🌐</h2>
-      <div class="row">
-        <div class="col-md-3 mb-5 about-preview services-about-preview services-about">
-        <h3 class="font-semibold">Design Services</h3>
-        <ul>
-          <li><span><i class="fa-solid fa-chevron-right"></i></span> Logo Design - R500.00</li>
-          <li> <span><i class="fa-solid fa-chevron-right"></i></span> Business Cards - R300.00</li>
-          <li> <span><i class="fa-solid fa-chevron-right"></i></span> Poster Design - R250.00 </li>
-          <li> <span><i class="fa-solid fa-chevron-right"></i></span> Company Profile - R600.00</li>
-          <li> <span><i class="fa-solid fa-chevron-right"></i></span> Letterhead Design - R250.00</li>
-          <li> <span><i class="fa-solid fa-chevron-right"></i></span> Banner - R300.00</li>
-          <li> <span><i class="fa-solid fa-chevron-right"></i></span> Invoice & Quotation - R250.00</li>
-          <li> <span><i class="fa-solid fa-chevron-right"></i></span> Professional/Company Emails : R300.00</li>
-         
-        </ul>
-    </div>
-    <div class="col-md-3  about-preview services-about-preview services-about">
-        <h3 class="font-semibold">Web & Social Media</h3>
-        <ul>
-          <li> <span><i class="fa-solid fa-chevron-right"></i></span> Website Development - R2500.00</li>
-          <li> <span><i class="fa-solid fa-chevron-right"></i></span> Social Media Branding - R1200.00</li>
-        </ul>
-  
-    </div>
-    <div class="col-md-3 mb-5 about-preview services-about-preview services-about">
-        <h3 class="font-semibold">Standered Package</h3>
-        <li> <span><i class="fa-solid fa-chevron-right"></i></span> <p>Logo + Website + Social Media - <strong>R3800.00</strong></p></li>
-       <li> <span><i class="fa-solid fa-chevron-right"></i></span> <p>Logo + Business Cards + Letterhead + Company Profile - <strong> R1 200.00</strong></p></li>
-       <li> <span><i class="fa-solid fa-chevron-right"></i></span> <p>Logo + Business Cards + Letterhead + Company Profile + Professiona/Company Emails + Website + Social Media- <strong> R5 000.00</strong></p></li>
-
-    </div>
-    <div class="col-md-3 about-preview services-about-preview services-about">
-        <h3 class="font-semibold">Pro Package</h3>
-        <li><span><i class="fa-solid fa-chevron-right"></i></span> <p>Get 20% off when you book 3 services together</p> </li>
+    <div class="branding-services">
+      <h2 class="title">Branding & Digital Solutions 🌐</h2>
+      
+      <div class="branding-list">
+        <div class="branding-box">
+          <h3 class="font-semibold">Design Services</h3>
+          <ul>
+            <li><i class="fa-solid fa-chevron-right"></i> Logo Design - <strong>R500.00</strong></li>
+            <li><i class="fa-solid fa-chevron-right"></i> Business Cards - <strong>R300.00</strong></li>
+            <li><i class="fa-solid fa-chevron-right"></i> Poster Design - <strong>R250.00</strong></li>
+            <li><i class="fa-solid fa-chevron-right"></i> Company Profile - <strong>R600.00</strong></li>
+            <li><i class="fa-solid fa-chevron-right"></i> Letterhead Design - <strong>R250.00</strong></li>
+            <li><i class="fa-solid fa-chevron-right"></i> Banner - <strong>R300.00</strong></li>
+            <li><i class="fa-solid fa-chevron-right"></i> Invoice & Quotation - <strong>R250.00</strong></li>
+            <li><i class="fa-solid fa-chevron-right"></i> Professional/Company Emails - <strong>R300.00</strong></li>
+          </ul>
+        </div>
+    
+        <div class="branding-box">
+          <h3 class="font-semibold">Web & Social Media</h3>
+          <ul>
+            <li><i class="fa-solid fa-chevron-right"></i> Website Development - <strong>R2 500.00</strong></li>
+            <li><i class="fa-solid fa-chevron-right"></i> Social Media Branding - <strong>R1 200.00</strong></li>
+          </ul>
+        </div>
+    
+        <div class="branding-box">
+          <h3 class="font-semibold">Standard Package</h3>
+          <ul>
+            <li><i class="fa-solid fa-chevron-right"></i> Logo + Website + Social Media - <strong>R3 800.00</strong></li>
+            <li><i class="fa-solid fa-chevron-right"></i> Logo + Business Cards + Letterhead + Company Profile - <strong>R1 200.00</strong></li>
+            <li><i class="fa-solid fa-chevron-right"></i> Full Branding Package - <strong>R5 000.00</strong></li>
+          </ul>
+        </div>
+    
+        <div class="branding-box">
+          <h3 class="font-semibold">Pro Package</h3>
+          <ul>
+            <li><i class="fa-solid fa-chevron-right"></i> Get <strong>20%</strong> off when you book 3 services together</li>
+          </ul>
+        </div>
+    
       </div>
-      <button class="btn btn-primary mt-3 edu-button">Inquire Now</button> <!-- Button added -->
-
+    
+      <button class="btn btn-primary inquire-btn">Inquire Now</button>
+    
     </div>
-  </div>
-</div>
+    
 
 <footer class="footer">
 <div class="container footer-content d-flex justify-content-between align-items-center">
