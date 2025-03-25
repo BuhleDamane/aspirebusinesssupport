@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspire Business Support</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">    
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<style>
+   
+.collapse {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+button[data-bs-toggle="collapse"] {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button[data-bs-toggle="collapse"]:hover {
+    background-color: #0056b3;
+}
+
+.edu-button {
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.edu-button:hover {
+    background-color: #218838;
+}
+
+</style>
+<body>
+ 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Aspire Business Support</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="education-services" class="education-services">
+        <h2 class="title">Education Services 🎓</h2>
+    
+        <p>Our Education Services are tailored to help students with university applications, bursary and NSFAS applications, as well as tutoring in various fields. We aim to simplify the application process and make education more accessible.</p>
+ 
+        <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#individualServices" aria-expanded="false" aria-controls="individualServices">
+            Individual Services
+        </button>
+        <div class="collapse" id="individualServices">
+            <div class="card card-body">
+                <h4>Individual Services</h4>
+                <p><strong>University Application (R50.00):</strong> A straightforward application service where we assist students in applying to their chosen universities.</p>
+                <p><strong>NSFAS Application (R20.00):</strong> Help with applying for the National Student Financial Aid Scheme (NSFAS). A simple, affordable service that includes guidance through the process.</p>
+                <p><strong>Bursary Application (R150.00):</strong> Assistance with bursary applications, including review of application documents. Please note, while we do not write motivation letters for students, we offer guidance and review to ensure that applications are as strong as possible.</p>
+                <p><strong>Student Accommodation Application (R50.00):</strong> We help students with accommodation applications to secure housing near their university. This service will help students find a comfortable living space while studying.</p>
+                <p><strong>Tertiary Registration (R300.00):</strong> This service is only paid upon successful admission to a tertiary institution. It helps students save time and money by handling the registration process, ensuring a seamless transition to campus without the need for physical visits.</p>
+            </div>
+        </div>
+    
+        <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#tutoringServices" aria-expanded="false" aria-controls="tutoringServices">
+            Tutoring Services
+        </button>
+        <div class="collapse" id="tutoringServices">
+            <div class="card card-body">
+                <h4>Tutoring Services</h4>
+                <p><strong>LLB & BCom Law (R300.00):</strong> Personalized tutoring for law students. This service can be offered on a monthly or per-module basis depending on the student’s needs.</p>
+                <p><strong>Education (All Phases) (R250.00):</strong> Tutoring for students in all phases of their education journey. This service is available on a monthly or per-module basis to help students excel in their studies.</p>
+                <p><strong>Engineering (All Fields) (R300.00):</strong> Specialized tutoring for students pursuing a degree in engineering. Whether it's mechanical, civil, or electrical engineering, we offer tutoring to match your needs.</p>
+                <p><strong>Human Resources & Business Administration (R250.00):</strong> Tailored tutoring for students pursuing careers in human resources and business administration. We offer monthly or per-module tutoring to help students succeed in these fields.</p>
+            </div>
+        </div>
+  
+        <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#packageDeals" aria-expanded="false" aria-controls="packageDeals">
+            Package Deals
+        </button>
+        <div class="collapse" id="packageDeals">
+            <div class="card card-body">
+                <h4>Package Deals</h4>
+                <p><strong>10 University Applications (R400.00):</strong> A bulk deal for students applying to multiple universities. Save time and money with this package.</p>
+                <p><strong>10 Accommodation Applications (R400.00):</strong> A special deal for students who need help applying to multiple accommodation options.</p>
+                <p><strong>NSFAS + 4 Bursary Applications (R250.00):</strong> A combined package that assists with both NSFAS applications and four bursary applications. A perfect deal for students looking to secure funding.</p>
+                <p><strong>Tutoring (3+ Modules Get 20% Discount):</strong> If you sign up for tutoring in 3 or more modules, you’ll receive a 20% discount on the total cost.</p>
+            </div>
+        </div>
+    
+        <button class="btn btn-primary edu-button">Inquire Now</button>
+    </div>
+    
+<footer class="footer">
+<div class="container footer-content d-flex justify-content-between align-items-center">
+   
+    <div class="footer-logo">
+        <img src="images/IMG_20250312_121810.jpg" alt="Aspire Business Support Logo" class="logo-image">
+    </div>
+
+   
+    <div class="footer-links text-center">
+        <ul class="list-unstyled">
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+            <li><a href="info.html#privacy-policy" class="footer-link">Privacy Policy</a></li>
+            <li><a href="info.html#terms-conditions" class="footer-link">Terms & Conditions</a></li>
+            <li><a href="info.html#faq" class="footer-link">FAQ</a></li>
+        </ul>
+    </div>
+
+    <div class="social-icons d-flex justify-content-end">
+        <a href="https://facebook.com" target="_blank">
+            <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <i class="fab fa-twitter-square"></i>
+        </a>
+        <a href="https://wa.me" target="_blank">
+            <i class="fab fa-whatsapp-square"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <i class="fab fa-instagram-square"></i>
+        </a>
+    </div>
+</div>
+
+
+<div class="footer-bottom text-center py-3">
+    <p>&copy; 2025 Aspire Business Support. All Rights Reserved.</p>
+</div>
+</footer>
+<script>
+   
+document.querySelectorAll('.btn-secondary').forEach(button => {
+    button.addEventListener('click', function (event) {
+        event.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+    });
+});
+
+</script>
+</body>
+</html>
