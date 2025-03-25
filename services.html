@@ -12,6 +12,74 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">    
     <link rel="stylesheet" href="styles.css"> 
 </head>
+<style>
+  .expert {
+    font-family: 'Playfair', serif !important;
+    font-size: 4rem !important;
+    font-weight: 700 !important;
+    color: #663300 !important;
+  }
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.delay-1 {
+  animation-delay: 1s;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 18px;
+}
+
+.delay-2 {
+  animation-delay: 2.5s;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 18px;
+
+}
+
+.delay-3 {
+  animation-delay: 3.5s;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 18px;
+
+}
+
+h2.display-4 {
+  display: inline-block;
+  animation: pop 0.5s ease-in-out;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+a, .btn {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+a:hover, .btn:hover {
+  transform: scale(1.1);
+  color: #007bff;
+}
+
+</style>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -35,20 +103,23 @@
   <div class="container">
       <div class="row text-center">
           <div class="col">
-              <h2 class="display-4 text-primary mb-4">Our Expert Services</h2>
-              <p class="lead text-muted">
+              <h2 class=" text-primary mb-4 expert">Our Expert Services</h2>
+              <p class="lead text-muted fade-in delay-1">
                   At <strong>Aspire Business Support</strong>, we pride ourselves on offering tailored solutions designed to meet the unique needs of each client. Whether you're looking to build your online presence, improve your digital infrastructure, or create innovative solutions for your business, we have the expertise to help you succeed.
               </p>
-              <p class="text-muted">
+              <br>
+              <p class="text-muted fade-in delay-2">
                   Our dedicated team is committed to delivering the highest quality service, ensuring that every project is completed on time and within budget. We focus on building lasting relationships with our clients, understanding their challenges, and providing support at every step of the way.
               </p>
-              <p class="text-muted">
+             <br>
+              <p class="text-muted fade-in delay-3">
                   Explore the variety of services we offer below, and find the perfect solution to help you achieve your goals.
               </p>
           </div>
       </div>
   </div>
 </section>
+
 
 <div id="education-services" class="education-services">
       <h2 class="title">Education Services 🎓</h2>
@@ -218,3 +289,6 @@
     <p>&copy; 2025 Aspire Business Support. All Rights Reserved.</p>
 </div>
 </footer>
+
+</body>
+</html>

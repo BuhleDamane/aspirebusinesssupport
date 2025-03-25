@@ -655,13 +655,12 @@ h2 {
 .footer-link:hover {
     color: #007bff; 
 }
-
-
 .social-icons {
     display: flex;
     justify-content: flex-end;
     gap: 20px;
     font-weight: 600;
+    flex-wrap: wrap; 
 }
 
 .social-icons a {
@@ -669,15 +668,12 @@ h2 {
     color: inherit; 
     font-size: 30px; 
     transition: transform 0.3s, color 0.3s; 
-    
 }
-
 
 .social-icons a:hover {
     transform: scale(1.2); 
     color: #007bff; 
 }
-
 
 .social-icons a i.fa-facebook-square {
     color: #3b5998;
@@ -695,6 +691,22 @@ h2 {
     color: #e4405f;
 }
 
+@media (max-width: 768px) {
+    .social-icons {
+        justify-content: center; 
+        gap: 10px; 
+    }
+
+    .social-icons a {
+        font-size: 25px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .social-icons a {
+        font-size: 20px; 
+    }
+}
 
 .footer-bottom {
     background-color: #663300;
