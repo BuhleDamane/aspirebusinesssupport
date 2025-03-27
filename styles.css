@@ -1122,15 +1122,15 @@ p {
   }
   #headingPackages .accordion-button {
     background-color: #00c6c7 !important;
-    color: white; /* White text */
+    color: white; 
 }
 #headingIndividual .accordion-button{
     background-color: #00c6c7 !important;
-    color: white; /* White text */
+    color: white; 
 }
 #headingTutoring .accordion-button{
     background-color: #00c6c7;
-    color: white; /* White text */
+    color: white; 
 }
 .accordion-header button{
     background-color: #663300;
