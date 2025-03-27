@@ -551,7 +551,9 @@ h2 {
 .carousel-control-prev, .carousel-control-next {
     background-color: transparent;
 }
-
+.busi-button, .bra-button{
+    margin-top: 30px;
+}
 @media screen and (max-width: 768px) {
     #testimonials h2 {
         font-size: 1.8rem;
@@ -1118,4 +1120,24 @@ p {
   .education-box{
     margin-bottom: 20px;
   }
+  #headingPackages .accordion-button {
+    background-color: #00c6c7 !important;
+    color: white; /* White text */
+}
+#headingIndividual .accordion-button{
+    background-color: #00c6c7 !important;
+    color: white; /* White text */
+}
+#headingTutoring .accordion-button{
+    background-color: #00c6c7;
+    color: white; /* White text */
+}
+.accordion-header button{
+    background-color: #663300;
+    color: #fff;
+}
+.accordion-header button:hover{
+    background-color: #fff;
+    color: #00c6c7;
+}
   /* SERVICES PAGE ENDS*/
