@@ -1140,4 +1140,11 @@ p {
     background-color: #fff;
     color: #00c6c7;
 }
+#headingDiscounted{
+    background-color: #00c6c7 !important;
+    color: white; 
+}
+#headingAdditionalServices{
+    background-color: #00c6c7 !important;
+    color: white;}
   /* SERVICES PAGE ENDS*/
