@@ -1160,7 +1160,7 @@ p {
         background-color: #f9f9f9;
         margin: 0;
         padding: 0;
-        overflow-x: hidden;
+        overflow-x: hidden !important;
     }
     p{
         font-family: "Poppins", sans-serif; 
@@ -1186,7 +1186,7 @@ p {
         width: 100%;
     }
     .hero-container{
-        height: 65vh;
+        height: 60vh;
         width: 100%;
         background-color: #f9f9f9; 
     }
@@ -1217,7 +1217,9 @@ p {
         color: #333333; 
         font-size: 18px;
     }
-    
+    .bttns{
+        margin-top: 40px !important;
+    }
     .btn {
         font-family: "Poppins", sans-serif;
         color: white;

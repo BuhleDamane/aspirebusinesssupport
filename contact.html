@@ -24,6 +24,7 @@ body {
 .contact-h1{
     text-align: center;
     margin-top: 30px;
+    font-size: 50px;
 }
 header {
     background-color: #333;
@@ -34,7 +35,7 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 header p {
@@ -101,7 +102,106 @@ header p {
     margin-bottom: 10px;
 }
 
+@media (max-width: 480px) {
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    .contact-h1{
+        text-align: center;
+        margin-top: 30px;
+        font-size: 40px;
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    header h1 {
+        margin: 0;
+        font-size: 2em;
+    }
+    
+    .main p {
+        margin: 10px 0 0;
+        font-size: 1em;
+    }
+    
+    .contact-form {
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        max-width: 600px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .contact-form h2 {
+        font-size: 1.5em;
+        color: #333;
+        margin-bottom: 20px;
+    }
+    
+    .contact-form label {
+        font-size: 1.1em;
+        margin-bottom: 8px;
+        display: block;
+    }
+    .contact-form label{
 
+        font-size: 1em;
+    }
+    label {
+        font-size: 1em;
+        margin-bottom: 8px;
+        display: block;
+    }
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .contact-form input{
+        font-size: 0.9em;
+    }
+    .contact-form button {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        font-size: 1em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+    }
+    
+    .contact-form button:hover {
+        background-color: #555;
+    }
+    
+    .contact-info {
+        margin: 20px auto;
+        max-width: 600px;
+        text-align: center;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+    
+    .contact-info p {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+    }
+
+}
 </style>
 <body>
 
@@ -122,9 +222,10 @@ header p {
         </div>
     </div>
 </nav>
+<div class="main">
         <h1 class="contact-h1">Contact Us</h1>
         <p>We'd love to hear from you. Please fill out the form below, and we'll get in touch with you soon!</p>
-    </header>
+    </div>
 
     <section class="contact-form">
         <h2>Send Us a Message</h2>
@@ -149,7 +250,6 @@ header p {
         <h2>Contact Information</h2>
         <p><strong>Phone:</strong> +123 456 7890</p>
         <p><strong>Email:</strong> info@example.com</p>
-        <p><strong>Address:</strong> 123 Street Name, City, Country</p>
     </section>
 
 </body>
