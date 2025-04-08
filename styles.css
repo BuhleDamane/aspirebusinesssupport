@@ -1152,12 +1152,7 @@ p {
         color: white; 
     }
     @media (max-width: 480px) {
-        body{
-            overflow: hidden !important; 
-        }
-        .about-preview{
-            
-        }
+     
     }
   /* SERVICES PAGE ENDS*/
   /* -------------------------------------------------Small Screens---------------------------------------------*/
@@ -1182,6 +1177,7 @@ p {
     .navbar-brand{
         font-size: 20px;
     }
+    
     .nav-link{
         font-size: 15px;
     }
